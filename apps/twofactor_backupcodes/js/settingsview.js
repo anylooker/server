@@ -114,9 +114,9 @@
 		},
 		_onPrintBackupCodes: function () {
 			var url = this._getDownloadDataHref();
-			window.open(url, t('twofactor_backupcodes', 'Nextcloud backup codes'));
-			window.print();
-			window.close();
+			var newTab = window.open(url, t('twofactor_backupcodes', 'Nextcloud backup codes'));
+			newTab.print();
+			newTab.close();
 		}
 	});
 
